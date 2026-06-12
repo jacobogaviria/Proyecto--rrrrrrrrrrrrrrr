@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+// ✅ Cambia las rutas de los estilos a estas que son más directas y compatibles:
+import dark from 'react-syntax-highlighter/dist/cjs/styles/prism/dark';
+import vscDarkPlus from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus';
 
 
 // Se añade un estado de carga (isLoading) y de error (error) para mejorar la UX.
